@@ -135,12 +135,14 @@ function addBoxes(gameTime, option) {
         const idx = randomMath(1, 4)
         const box = document.createElement('img')
         box.className = 'secretBox'
-        box.src = "/img/box" + idx + ".png"
+//         box.src = "/img/box" + idx + ".png"
+        box.src =  "https://raw.githubusercontent.com/etozhesmirnov/aimgods-roulette/main/img/box + idx + ".png"
         document.getElementById('slider').appendChild(box)
     }
     function addNothingBox() {
         const box = document.createElement('img')
-        box.src = "/img/nothing.png"
+//         box.src = "/img/nothing.png"
+        box.src = "https://raw.githubusercontent.com/etozhesmirnov/aimgods-roulette/main/img/nothing.png"
         box.className = 'nothingBox'
         document.getElementById('slider').appendChild(box)
     }
@@ -150,16 +152,21 @@ function addBoxes(gameTime, option) {
         switch (prize) {
             case 'mouse':
                 const idx = randomMath(1, 4)
-                box.src = "/img/mouse" + idx + ".png"
+//                 box.src = "/img/mouse" + idx + ".png"
+                box.src = "https://raw.githubusercontent.com/etozhesmirnov/aimgods-roulette/main/img/mouse" + idx + ".png"
                 break;
             case 'game copy':
-                box.src = './img/dvd.webp'
+//                 box.src = './img/dvd.webp'
+                box.src = "https://raw.githubusercontent.com/etozhesmirnov/aimgods-roulette/main/img/dvd.webp"
                 break;
             case 'keys':
-                box.src = './img/icon3.png'
+//                 box.src = './img/icon3.png'
+                box.src = "https://raw.githubusercontent.com/etozhesmirnov/aimgods-roulette/main/img/icon3.png"
                 break;
             default:
-                box.src = 'style/img/nothing.png'
+//                 box.src = 'style/img/nothing.png'
+                box.src = "https://raw.githubusercontent.com/etozhesmirnov/aimgods-roulette/main/img/nothing.png"
+                box.src = ""
         }
 
         document.getElementById('slider').appendChild(box)
