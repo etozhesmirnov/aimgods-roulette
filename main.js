@@ -215,5 +215,5 @@ document.getElementById("gameStartBtn").onclick = () => {
     tryTakeKey()
     takeSelectedRadioValue()
     gameTime = randomMath(5000, 20000)
-    gameState('play', gameTime, 2)
+    gameState('play', gameTime, randomMath(1, 2))
 }
