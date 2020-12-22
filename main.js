@@ -136,7 +136,7 @@ function addBoxes(gameTime, option) {
         const box = document.createElement('img')
         box.className = 'secretBox'
 //         box.src = "/img/box" + idx + ".png"
-        box.src =  "https://raw.githubusercontent.com/etozhesmirnov/aimgods-roulette/main/img/box + idx + ".png"
+        box.src =  "https://raw.githubusercontent.com/etozhesmirnov/aimgods-roulette/main/img/box" + idx + ".png"
         document.getElementById('slider').appendChild(box)
     }
     function addNothingBox() {
